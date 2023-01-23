@@ -1,56 +1,68 @@
 
-.feature-list {
-    display: flex;
-    gap: 30px;
-    & .title-list:last-child {
-            margin-right: 0;
-        }
-}
+// .feature-list {
+//     display: flex;
+//     gap: 30px;
+//     // & .title-list:last-child {
+//     //         margin-right: 0;
+//     //         display: list-item;
+             
+//     //     }
+
+//     @media screen and (min-width: 768px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+        
+        
+// }
 
 
 
-.feature-list .title {
-    margin-bottom: 10px;
+// .feature-list .title {
+//     margin-bottom: 10px;
 
-    color: var(--main-nav-link-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase
-}
+//     color: var(--main-nav-link-color);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase
 
-.feature-list p {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
+      
+// }
 
-.title-list::before {
-    display: block;
-    content: "";
-    height: 120px;
-    width: 270px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
+// .feature-list p {
+//     display: block;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+// }
 
-}
+// .title-list::before {
+//     display: block;
+//     content: "";
+//     height: 120px;
+//     width: 270px;
+//     background-size: 70px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: #F5F4FA;
+//     margin-bottom: 30px;
 
-.icon-antenna::before {
-    background-image: url(../images/antenna\ 1.svg);
-}
+// }
 
-.icon-clok::before {
-    background-image: url(../images/clock\ 1.svg);
-}
+// .icon-antenna::before {
+//     background-image: url(../images/antenna\ 1.svg);
+// }
 
-.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.svg);
-}
+// .icon-clok::before {
+//     background-image: url(../images/clock\ 1.svg);
+// }
 
-.icon-astronaut::before {
-    background-image: url(../images/astronaut\ 1.svg);
-}
+// .icon-diagram::before {
+//     background-image: url(../images/diagram\ 1.svg);
+// }
+
+// .icon-astronaut::before {
+//     background-image: url(../images/astronaut\ 1.svg);
+// }

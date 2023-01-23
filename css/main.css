@@ -36,6 +36,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -51,7 +52,6 @@ body {
     width: 1200px;
   }
 }
-
 span {
   color: var(--span-color);
 }
@@ -239,11 +239,13 @@ header {
 }
 
 .feature-list {
-  display: flex;
-  gap: 30px;
+  display: block;
 }
-.feature-list .title-list:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature-list .title {
@@ -256,7 +258,19 @@ header {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .title-list {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-list {
+    width: calc((100% - 15px) / 4);
+  }
+}
+
 .feature-list p {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -358,6 +372,21 @@ header {
   margin-right: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .team-card {
+    flex-basis: calc(50% - 15px);
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    width: 270px;
+    margin-right: 30px;
+  }
+  .team-card:nth-child(4n) {
+    margin-right: 0;
+  }
+}
 .section-team {
   background: #F5F4FA;
 }
@@ -487,6 +516,12 @@ header {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 address .link {
